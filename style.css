@@ -19,31 +19,35 @@ body {
 
 #bookForm {
   width: 50%;
-  border: 2px solid #000;
   text-align: center;
-  margin: 20px 23%;
+  margin: 30px 23%;
   padding: 30px 0;
 }
 
 #title {
-  width: 50%;
-  height: 30px;
+  width: 60%;
+  height: 35px;
   border: 2px solid #000;
   color: #272a31;
 }
 
 #tuthor {
-  width: 50%;
-  height: 30px;
+  width: 60%;
+  height: 35px;
   border: 2px solid #000;
   color: #272a31;
 }
 
 #addItem {
   border: 2px solid #000;
-  height: 25px;
-  width: 60px;
-  margin-left: 42%;
+  height: 35px;
+  width: 85px;
+  margin-left: 50%;
+}
+
+#addItem:hover {
+  background-color: lightgreen;
+  color: #fff;
 }
 
 #dynamic {
@@ -52,7 +56,6 @@ body {
   margin: 20px 23%;
   border: 2px solid #000;
   align-items: center;
-  padding: 12px 50px;
 }
 
 #dynamic title {
@@ -72,12 +75,16 @@ body {
 .book {
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
+  padding-left: 20px;
   text-align: center;
   font-size: 20px;
   font-family: sans-serif;
   width: 100%;
   padding-top: 10px;
+}
+
+.book:nth-child(odd) {
+  background-color: #d3d3d3;
 }
 
 .btn-delete {
@@ -90,6 +97,7 @@ body {
   padding: 0 10px;
   cursor: pointer;
   margin-top: -10px;
+  margin-inline-end: -230px;
 }
 
 .btn-delete:hover {
