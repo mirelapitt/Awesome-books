@@ -42,7 +42,7 @@ body {
   border: 2px solid #000;
   height: 35px;
   width: 85px;
-  margin-left: 50%;
+  margin-left: 48%;
 }
 
 #addItem:hover {
@@ -73,7 +73,8 @@ body {
 }
 
 .book {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
   justify-content: space-between;
   padding-left: 20px;
   text-align: center;
@@ -97,7 +98,6 @@ body {
   padding: 0 10px;
   cursor: pointer;
   margin-top: -10px;
-  margin-inline-end: -230px;
 }
 
 .btn-delete:hover {
