@@ -1,1 +1,105 @@
 /* Only comments */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     width: 100%;
+ }
+
+.main-container {
+     width: 100%;
+     align-items: center;
+}
+
+#bookForm {
+    width: 50%;
+    border: 2px solid #000;
+    text-align: center;
+    margin: 20px 23%;
+    padding: 30px 0;
+}
+
+#title {
+    width: 50%;
+    height: 30px;
+    border: 2px solid #000;
+    color: #272a31;
+}
+
+#tuthor {
+    width: 50%;
+    height: 30px;
+    border: 2px solid #000;
+    color: #272a31;
+}
+
+#addItem {
+    border: 2px solid #000;
+    height: 25px;
+    width: 60px;
+    margin-left: 42%;
+}
+
+#dynamic {
+    width: 50%;
+    text-align: center;
+    margin: 20px 23%;
+    border: 2px solid #000;
+    align-items: center;
+    padding: 12px 50px;
+}
+
+#dynamic title {
+    border: 1px solid red;
+    padding: 10px 0;
+}
+
+#bookss h1 {
+    width: 50%;
+    text-align: center;
+    margin: 20px 23%;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.book {
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.btn-delete {
+    width: 100px;
+    height: 35px;
+    border: 2px solid #000;
+    background-color: lightgreen;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.btn-delete:hover {
+    background-color: red;
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+    box-shadow:
+      0 5px 10px rgba(212, 130, 130, 0.82),
+      0 5px 10px rgba(214, 140, 140, 0.82),
+      0 5px 10px rgba(212, 151, 151, 0.82),
+      0 5px 10px rgba(199, 91, 91, 0.82);
+}
+
