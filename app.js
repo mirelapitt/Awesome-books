@@ -11,6 +11,10 @@ function createForm() {
 </div>
 </div>
 <div>
+<div class = "hrstyle">
+<hr>
+</div>
+<h1>Add a new book</h1>
   <form id = "bookForm">
     <input type="text" name = "title" id="title" required placeholder="Title"><br><br>
     <input type="text" name = "author" id="tuthor" required placeholder="Author"><br><br>
@@ -20,6 +24,14 @@ function createForm() {
 `;
   collection.appendChild(div);
 }
+
+class Books {
+  constructor(title , author) {
+    this.title = title;
+    this.author = author;
+  }
+}
+
 createForm();
 
 function dataStore() {
@@ -38,12 +50,12 @@ function displayBooks() {
   let listOfBooks = '';
   books.forEach((book, index) => {
     listOfBooks += ` <div class="book">
-    <div>${book.title}</div>
+    <div>"${book.title}"</div>
+    <div>by</div>
     <div>${book.author}</div>
     <div>
         <button class='btn-delete' id=${index}>Remove</button>
-    </div>
-    <hr/>        
+    </div>       
   </div>`;
   });
   const div = document.getElementById('dynamic');
