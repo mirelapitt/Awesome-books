@@ -44,7 +44,7 @@ class BookClass {
         this.remove(e);
       });
       removeButton.setAttribute("id", index + 1);
-      titleContainer.innerText = `Title : ${element.title} \nAuhor : `;
+      titleContainer.innerText = `Title : ${element.title} \nAuthor : `;
       authorContainer.innerText = element.author;
       bookInfos.appendChild(titleContainer);
       bookInfos.appendChild(authorContainer);

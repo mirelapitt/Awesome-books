@@ -18,18 +18,18 @@ body {
 }
 
 #bookss h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 34px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
+  text-align: center;
+  margin: 20px 0;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 
 #bookList {
-    text-align: center;
-    width: 50%;
-    border: 2px solid #000;
-    margin: 20px 25%;
+  text-align: center;
+  width: 50%;
+  border: 2px solid #000;
+  margin: 20px 25%;
 }
 
 .book-card {
@@ -44,12 +44,12 @@ body {
 }
 
 .book-card:nth-child(odd) {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 form {
-    margin: 40px 0;
-    width: 100%;
+  margin: 40px 0;
+  width: 100%;
 }
 
 #bookForm {
@@ -60,7 +60,7 @@ form {
 }
 
 input {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 #book-title {
@@ -94,12 +94,12 @@ input {
 }
 
 .btn {
-    width: 100px;
-    align-items: flex-end;
-    border: 2px solid #000;
-    margin-left: 80%;
-    cursor: pointer;
-    background-color: lightgreen;
+  width: 100px;
+  align-items: flex-end;
+  border: 2px solid #000;
+  margin-left: 80%;
+  cursor: pointer;
+  background-color: lightgreen;
 }
 
 .btn:hover {
@@ -111,4 +111,11 @@ input {
     0 5px 10px rgba(214, 140, 140, 0.82),
     0 5px 10px rgba(212, 151, 151, 0.82),
     0 5px 10px rgba(199, 91, 91, 0.82);
+}
+
+hr {
+    width: 10%;
+    border: 1px solid #000;
+    height: 2px;
+    margin: 40px 45%;
 }
