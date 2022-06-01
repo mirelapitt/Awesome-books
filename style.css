@@ -34,7 +34,7 @@ body {
 
 .book-card {
   display: grid;
-  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-columns: 2fr 5fr;
   justify-content: space-between;
   padding: 10px 20px;
   text-align: center;
@@ -114,8 +114,8 @@ input {
 }
 
 hr {
-    width: 10%;
-    border: 1px solid #000;
-    height: 2px;
-    margin: 40px 45%;
+  width: 10%;
+  border: 1px solid #000;
+  height: 2px;
+  margin: 40px 45%;
 }
