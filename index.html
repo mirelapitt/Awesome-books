@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+      <header>
+          <nav class="nav-head">
+              <h2>Awesome Books</h2>
+              <ul class="nav-item">
+                  <li class="nav-link"><a href="#booklist">List</a></li>
+                  <li class="nav-link"><a href="#addBook">Add new</a></li>
+                  <li class="nav-link"><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
     <section id="bookss">
-        <h1>All Awesome Books</h1>
+        <h1 id="booklist">All Awesome Books</h1>
       <!-- books list-->
       <div id="bookList"></div>
       <hr>
       <!-- Form to instert books -->
-      <form method="post">
+      <form method="post" id="addBook">
         <h2>Add a new book</h2>
         <!-- Book Title -->
         <input
@@ -36,6 +46,17 @@
         <br> <br>
         <button type="button" id="add">Add</button>
       </form>
+    </section>
+    <section id="contact">
+        <div class="cont-head">
+            <h1>Contact Information</h1>
+            <p>Do you have any question or you just want to say "Hello"? <br> You can reach out to us!</p>
+            <ul>
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </div>
     </section>
     <script src="app.js"></script>
   </body>
