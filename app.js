@@ -71,3 +71,25 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('current-date').innerHTML = new Date().toLocaleString();
+
+// Display the right section
+
+function showBookList() {
+  document.getElementById('id1').style.display = 'block';
+  document.getElementById('id2').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function showForm() {
+  document.getElementById('id1').style.display = 'none';
+  document.getElementById('id2').style.display = 'block';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function showContact() {
+  document.getElementById('id1').style.display = 'none';
+  document.getElementById('id2').style.display = 'none';
+  document.getElementById('contact').style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', showBookList);

@@ -12,20 +12,23 @@
           <nav class="nav-head">
               <h2>Awesome Books</h2>
               <ul class="nav-item">
-                  <li class="nav-link"><a href="#booklist">List</a></li>
-                  <li class="nav-link"><a href="#addBook">Add new</a></li>
-                  <li class="nav-link"><a href="#contact">Contact</a></li>
+                  <li class="nav-link"><a onclick="showBookList()" href="#">List</a></li>
+                  <li class="nav-link"><a onclick="showForm()" href="#">Add new</a></li>
+                  <li class="nav-link"><a onclick="showContact()" href="#">Contact</a></li>
               </ul>
           </nav>
       </header>
       <div id="current-date"></div>
+
     <section id="bookss">
+      <div id="id1" class="display">
         <h1 id="booklist">All Awesome Books</h1>
       <!-- books list-->
       <div id="bookList"></div>
       <hr>
+      </div>
       <!-- Form to instert books -->
-      <form method="post" id="addBook">
+      <form id="id2" method="post" id="addBook">
         <h2>Add a new book</h2>
         <!-- Book Title -->
         <input
@@ -62,7 +65,6 @@
     <footer id="copyright">
       <p class="copyright-paragraph">Copyright - Awesome Books 2022</p>
       </footer>
-    <script src="date.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
