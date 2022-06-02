@@ -172,3 +172,8 @@ hr {
     width: 100%;
     text-align: center;
 }
+
+#current-date {
+  float: right;
+  margin-right: 5%;
+}

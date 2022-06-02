@@ -69,3 +69,5 @@ addBookBtn.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   myBookList.displayBooks();
 });
+
+document.getElementById('current-date').innerHTML = new Date().toLocaleString();
