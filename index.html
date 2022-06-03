@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+      <header>
+          <nav class="nav-head">
+              <h2>Awesome Books</h2>
+              <ul class="nav-item">
+                  <li class="nav-link"><a onclick="showBookList()" href="#">List</a></li>
+                  <li class="nav-link"><a onclick="showForm()" href="#">Add new</a></li>
+                  <li class="nav-link"><a onclick="showContact()" href="#">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+      <div id="current-date"></div>
+
     <section id="bookss">
-        <h1>All Awesome Books</h1>
+      <div id="id1" class="display">
+        <h1 id="booklist">All Awesome Books</h1>
       <!-- books list-->
       <div id="bookList"></div>
       <hr>
+      </div>
       <!-- Form to instert books -->
-      <form method="post">
+      <form method="post" id="addBook">
         <h2>Add a new book</h2>
         <!-- Book Title -->
         <input
@@ -37,6 +51,20 @@
         <button type="button" id="add">Add</button>
       </form>
     </section>
+    <section id="contact">
+        <div class="cont-head">
+            <h1>Contact Information</h1>
+            <p>Do you have any question or you just want to say "Hello"? <br> You can reach out to us!</p>
+            <ul>
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </div>
+    </section>
+    <footer id="copyright">
+      <p class="copyright-paragraph">Copyright - Awesome Books 2022</p>
+      </footer>
     <script src="app.js"></script>
   </body>
 </html>

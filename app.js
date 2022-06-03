@@ -69,3 +69,28 @@ addBookBtn.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   myBookList.displayBooks();
 });
+
+document.getElementById('current-date').innerHTML = new Date().toLocaleString();
+
+// Display the right section
+/* eslint-disable no-unused-vars */
+
+function showBookList() {
+  document.getElementById('id1').style.display = 'block';
+  document.getElementById('addBook').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function showForm() {
+  document.getElementById('id1').style.display = 'none';
+  document.getElementById('addBook').style.display = 'block';
+  document.getElementById('contact').style.display = 'none';
+}
+
+function showContact() {
+  document.getElementById('id1').style.display = 'none';
+  document.getElementById('addBook').style.display = 'none';
+  document.getElementById('contact').style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', showBookList);
